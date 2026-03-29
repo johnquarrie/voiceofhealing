@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <!-- Meta Pixel Code -->
+
+<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -14,10 +15,7 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '2110460513062247');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2110460513062247&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Break Free From Addiction</title>
@@ -26,7 +24,7 @@ src="https://www.facebook.com/tr?id=2110460513062247&ev=PageView&noscript=1"
     body {
         margin: 0;
         font-family: Arial, sans-serif;
-        background: #0f172a;
+        background: #020617;
         color: #fff;
         text-align: center;
     }
@@ -34,18 +32,39 @@ src="https://www.facebook.com/tr?id=2110460513062247&ev=PageView&noscript=1"
     .container {
         max-width: 500px;
         margin: auto;
-        padding: 40px 20px;
+        padding: 30px 20px;
+    }
+
+    .alert {
+        background: red;
+        color: #fff;
+        padding: 8px;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 5px;
+        margin-bottom: 15px;
     }
 
     h1 {
-        font-size: 32px;
+        font-size: 34px;
         margin-bottom: 10px;
+        line-height: 1.2;
+    }
+
+    .highlight {
+        color: #22c55e;
     }
 
     p {
         font-size: 18px;
         line-height: 1.5;
         color: #cbd5f5;
+    }
+
+    .pain {
+        margin-top: 15px;
+        font-size: 17px;
+        color: #f87171;
     }
 
     .list {
@@ -63,17 +82,30 @@ src="https://www.facebook.com/tr?id=2110460513062247&ev=PageView&noscript=1"
     .cta-btn {
         display: inline-block;
         margin-top: 25px;
-        padding: 15px 25px;
+        padding: 16px 28px;
         background: #25D366;
         color: #fff;
         text-decoration: none;
         font-size: 18px;
-        border-radius: 8px;
+        border-radius: 10px;
         font-weight: bold;
+        animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
     }
 
     .cta-btn:hover {
         background: #1ebe5d;
+    }
+
+    .urgency {
+        margin-top: 15px;
+        font-size: 14px;
+        color: #facc15;
     }
 
     .trust {
@@ -94,40 +126,52 @@ src="https://www.facebook.com/tr?id=2110460513062247&ev=PageView&noscript=1"
 
 <div class="container">
 
-    <h1>Struggling With Addiction?</h1>
+    <div class="alert">⚠️ This May Be Your Last Chance To Break Free</div>
+
+    <h1>
+        Tired of <span class="highlight">Falling Back</span> Into Addiction?
+    </h1>
 
     <p>
-        Break free step by step and become completely free — for good.
+        You promised yourself you would stop…  
+        But somehow you keep going back.
+    </p>
+
+    <p class="pain">
+        The guilt. The frustration. The feeling of being stuck.
     </p>
 
     <p>
-        You’ve tried to stop before… but it didn’t last.<br>
-        This program shows you the exact path to freedom.
+        This program will take you step-by-step from addiction  
+        to complete freedom — permanently.
     </p>
 
     <!-- Addiction List -->
     <ul class="list">
-        <li>Masturbation</li>
-        <li>Pornography</li>
-        <li>Smoking</li>
-        <li>Drunkenness</li>
-        <li>And other addictive habits</li>
+        <li>❌ Masturbation</li>
+        <li>❌ Pornography</li>
+        <li>❌ Smoking</li>
+        <li>❌ Drunkenness</li>
+        <li>❌ Other hidden addictions</li>
     </ul>
 
-    <!-- WhatsApp Button -->
-   <br/>
+    <!-- CTA -->
     <a class="cta-btn" 
        href="https://chat.whatsapp.com/L4Qdlnvz6QGA4rzOFre7PF?mode=gi_t" 
        target="_blank">
-       👉 Join Now on WhatsApp
+       👉 I WANT FREEDOM NOW
     </a>
 
+    <div class="urgency">
+        ⏳ Limited access • Only serious people allowed
+    </div>
+
     <div class="trust">
-        100% Confidential • Simple Steps • Real Transformation
+        100% Confidential • Step-by-Step Guidance • Real Results
     </div>
 
     <footer>
-        Start your journey to freedom today.
+        Your freedom journey starts today.
     </footer>
 
 </div>
