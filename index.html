@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-<!-- Meta Pixel Code -->
+<!-- Facebook Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -12,9 +12,19 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
+
+/* 🔥 Replace with your real Pixel ID */
 fbq('init', '2110460513062247');
+
+/* Page View */
 fbq('track', 'PageView');
 </script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2110460513062247&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -90,6 +100,8 @@ fbq('track', 'PageView');
         border-radius: 10px;
         font-weight: bold;
         animation: pulse 1.5s infinite;
+        border: none;
+        cursor: pointer;
     }
 
     @keyframes pulse {
@@ -120,6 +132,7 @@ fbq('track', 'PageView');
         color: #64748b;
     }
 </style>
+
 </head>
 
 <body>
@@ -155,12 +168,10 @@ fbq('track', 'PageView');
         <li>❌ Other hidden addictions</li>
     </ul>
 
-    <!-- CTA -->
-    <a class="cta-btn" 
-       href="https://chat.whatsapp.com/L4Qdlnvz6QGA4rzOFre7PF?mode=gi_t" 
-       target="_blank">
-       👉 I WANT FREEDOM NOW
-    </a>
+    <!-- CTA BUTTON WITH LEAD TRACKING -->
+    <button class="cta-btn" onclick="trackLead()">
+        👉 I WANT FREEDOM NOW
+    </button>
 
     <div class="urgency">
         ⏳ Limited access • Only serious people allowed
@@ -175,6 +186,19 @@ fbq('track', 'PageView');
     </footer>
 
 </div>
+
+<!-- Lead Tracking Script -->
+<script>
+function trackLead() {
+    // 🔥 Track Lead Event
+    fbq('track', 'Lead');
+
+    // Delay before redirect (ensures tracking is sent)
+    setTimeout(function() {
+        window.open("https://chat.whatsapp.com/L4Qdlnvz6QGA4rzOFre7PF?mode=gi_t", "_blank");
+    }, 300);
+}
+</script>
 
 </body>
 </html>
